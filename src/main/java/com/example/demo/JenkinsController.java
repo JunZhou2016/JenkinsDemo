@@ -9,6 +9,6 @@ public class JenkinsController {
 		@RequestMapping("/test")
 		public String save(String data) {
 			long currentTime = System.currentTimeMillis();
-			return "This is jenkins test by_"+currentTime;
+			return "Hello!This is jenkins test by_"+currentTime;
 		}
 }
