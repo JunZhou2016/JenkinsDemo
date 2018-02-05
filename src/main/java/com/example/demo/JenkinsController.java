@@ -8,6 +8,7 @@ public class JenkinsController {
 	// 新增案例
 		@RequestMapping("/test")
 		public String save(String data) {
-			return "This is jenkins test by"+data;
+			long currentTime = System.currentTimeMillis();
+			return "This is jenkins test by_"+currentTime;
 		}
 }
